@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Sign up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+    <app-logo></app-logo>
+    <h1>Create Account</h1>
+  </div>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text" name="email" [(ngModel)]="postData.email"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input type="text" name="username" [(ngModel)]="postData.username"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="postData.password"></ion-input>
+      </ion-item>
+      
+      <ion-item lines="none">
+        Already you have an account?<a routerLink='/login'>Sign In</a>
+      </ion-item>
+
+      <ion-button expand="block" shape="round" color="primary" (click)="signupAction()">Sign Up</ion-button>
+    </ion-list>
+  </form>
+</ion-content>

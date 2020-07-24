@@ -1,0 +1,7 @@
+{
+  "name": "mango",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
